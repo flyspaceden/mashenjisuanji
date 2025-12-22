@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-mist text-ink font-sans antialiased;
+  }
+
+  .page-root {
+    --accent-a: 122 199 230;
+    --accent-b: 75 191 138;
+    --accent-c: 242 140 40;
+  }
+
+  .page-root[data-page='solutions'] {
+    --accent-a: 86 190 255;
+    --accent-b: 110 214 157;
+    --accent-c: 255 195 120;
+  }
+
+  .page-root[data-page='technology'] {
+    --accent-a: 90 170 255;
+    --accent-b: 120 224 230;
+    --accent-c: 182 238 210;
+  }
+
+  .page-root[data-page='ecosystem'] {
+    --accent-a: 90 206 191;
+    --accent-b: 140 221 152;
+    --accent-c: 255 205 140;
+  }
+
+  .page-root[data-page='team'] {
+    --accent-a: 190 210 255;
+    --accent-b: 255 206 147;
+    --accent-c: 255 171 120;
+  }
+
+  .page-root[data-page='business'] {
+    --accent-a: 255 205 130;
+    --accent-b: 122 189 255;
+    --accent-c: 146 228 186;
+  }
+
+  .page-root[data-page='insights'] {
+    --accent-a: 150 210 255;
+    --accent-b: 196 238 210;
+    --accent-c: 255 182 128;
+  }
+
+  .page-root[data-page='careers'] {
+    --accent-a: 124 210 170;
+    --accent-b: 170 219 255;
+    --accent-c: 255 204 147;
+  }
+
+  .page-root[data-page='contact'] {
+    --accent-a: 133 210 255;
+    --accent-b: 153 230 192;
+    --accent-c: 255 210 160;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+
+  a {
+    @apply text-ink/80 transition-colors;
+  }
+
+  a:hover {
+    @apply text-ink;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image: linear-gradient(rgb(var(--accent-a) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--accent-a) / 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .glass-card {
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--accent-a) / 0.22) 0%,
+      rgb(var(--accent-b) / 0.16) 40%,
+      rgb(255 255 255 / 0.92) 78%
+    );
+    border: 1px solid rgb(var(--accent-a) / 0.18);
+    box-shadow: 0 18px 45px rgb(20 34 61 / 0.09);
+    backdrop-filter: blur(12px);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    animation: fade-up 0.8s ease both;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 60px rgb(20 34 61 / 0.14);
+    border-color: rgb(var(--accent-a) / 0.4);
+  }
+
+  .page-glow {
+    background-image: radial-gradient(
+        700px circle at 15% 10%,
+        rgb(var(--accent-a) / 0.25),
+        transparent 45%
+      ),
+      radial-gradient(800px circle at 85% 0%, rgb(var(--accent-b) / 0.2), transparent 50%),
+      radial-gradient(900px circle at 50% 100%, rgb(var(--accent-c) / 0.16), transparent 60%);
+    background-repeat: no-repeat;
+  }
+
+  .hero-wash {
+    background-image: radial-gradient(
+        800px circle at 0% 35%,
+        rgb(var(--accent-a) / 0.16),
+        transparent 55%
+      ),
+      radial-gradient(900px circle at 90% 0%, rgb(var(--accent-b) / 0.14), transparent 60%);
+    background-repeat: no-repeat;
+  }
+
+  .section-surface {
+    background-image: radial-gradient(
+        900px circle at 0% 0%,
+        rgb(var(--accent-a) / 0.12),
+        transparent 45%
+      ),
+      radial-gradient(900px circle at 100% 0%, rgb(var(--accent-b) / 0.1), transparent 45%),
+      radial-gradient(900px circle at 50% 100%, rgb(var(--accent-c) / 0.08), transparent 55%);
+    background-repeat: no-repeat;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-card {
+    transition: none;
+    animation: none;
+  }
+
+  .glass-card:hover {
+    transform: none;
+  }
+}

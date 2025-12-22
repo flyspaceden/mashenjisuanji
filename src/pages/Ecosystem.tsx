@@ -1,0 +1,113 @@
+import { useTranslation } from 'react-i18next'
+import Container from '../components/Container'
+import Section from '../components/Section'
+import SectionHeader from '../components/SectionHeader'
+import ButtonLink from '../components/ButtonLink'
+import { images } from '../data/images'
+import { usePageMeta } from '../hooks/usePageMeta'
+
+const Ecosystem = () => {
+  const { t } = useTranslation()
+  usePageMeta(t('meta.ecosystem.title'), t('meta.ecosystem.description'))
+
+  const research = t('ecosystem.research.items', { returnObjects: true }) as string[]
+  const industry = t('ecosystem.industry.items', { returnObjects: true }) as string[]
+  const finance = t('ecosystem.finance.items', { returnObjects: true }) as string[]
+  const models = t('ecosystem.models.items', { returnObjects: true }) as string[]
+
+  return (
+    <div>
+      <section className="relative overflow-hidden pb-12 pt-16 hero-wash">
+        <div className="absolute inset-0 bg-grid opacity-40" />
+        <Container className="relative">
+          <SectionHeader
+            eyebrow={t('ecosystem.hero.eyebrow')}
+            title={t('ecosystem.hero.title')}
+            subtitle={t('ecosystem.hero.subtitle')}
+          />
+        </Container>
+      </section>
+
+      <Section>
+        <Container className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="space-y-6">
+            <SectionHeader title={t('ecosystem.research.title')} subtitle={t('ecosystem.research.subtitle')} />
+            <div className="flex flex-wrap gap-3">
+              {research.map((item) => (
+                <span key={item} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-xs font-semibold text-ink/70">
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="glass-card rounded-3xl p-6">
+            <img src={images.team} alt="Research partners" className="h-64 w-full rounded-2xl object-cover" />
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="bg-white/70">
+        <Container>
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="rounded-3xl border border-ink/10 bg-white p-6">
+              <h3 className="text-lg font-semibold">{t('ecosystem.industry.title')}</h3>
+              <p className="mt-2 text-sm text-ink/70">{t('ecosystem.industry.subtitle')}</p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {industry.map((item) => (
+                  <span key={item} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-xs font-semibold text-ink/70">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-3xl border border-ink/10 bg-white p-6">
+              <h3 className="text-lg font-semibold">{t('ecosystem.finance.title')}</h3>
+              <p className="mt-2 text-sm text-ink/70">{t('ecosystem.finance.subtitle')}</p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {finance.map((item) => (
+                  <span key={item} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-xs font-semibold text-ink/70">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <SectionHeader title={t('ecosystem.models.title')} subtitle={t('ecosystem.models.subtitle')} />
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {models.map((item) => (
+              <div key={item} className="glass-card rounded-3xl p-6 text-sm text-ink/70">
+                {item}
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      <Section className="bg-white">
+        <Container>
+          <div className="glass-card rounded-3xl p-10">
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div className="space-y-3">
+                <h2 className="text-2xl font-semibold md:text-3xl">{t('ecosystem.cta.title')}</h2>
+                <p className="text-sm text-ink/70 md:text-base">{t('ecosystem.cta.subtitle')}</p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <ButtonLink to="/contact">{t('ecosystem.cta.primary')}</ButtonLink>
+                <ButtonLink to="/insights" variant="secondary">
+                  {t('ecosystem.cta.secondary')}
+                </ButtonLink>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    </div>
+  )
+}
+
+export default Ecosystem
