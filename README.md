@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# 深圳麻省计算机系统有限公司（MCS）官网
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个面向科技企业的多页面 React 官网，强调“实时 AI + 农业/产业数据”场景。支持中英文切换、响应式布局，面向 GitHub Pages 部署。
 
-Currently, two official plugins are available:
+## 页面结构
+- 首页：品牌定位、核心技术、关键赛道、对比数据与生态合作概览
+- 解决方案：AI 水产养殖、福利化养鸡、盐碱地海水稻、数据确权与资产化、文旅/大健康
+- 技术研发：鲁棒 ML、Core Sets、多模态感知、云边协同与架构流程
+- 生态合作：高校/科研/企业/金融合作网络与模式
+- 团队：创始人、核心合伙人、全球专家委员会与荣誉
+- 商业模式：AIaaS + 交易佣金 + 硬件 + 项目制
+- 洞见：新闻动态、白皮书、活动
+- 招聘：文化价值观、岗位与福利
+- 联系：联系信息与合作表单（无后台，仅展示）
+- 404：未找到页面
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 技术栈
+- React + TypeScript + Vite
+- Tailwind CSS
+- React Router（HashRouter，适配 GitHub Pages）
+- i18next（中英文切换，语言记忆）
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 本地开发
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 构建与预览
+```bash
+npm run build
+npm run preview
 ```
+
+## 资源与占位
+- 站点 Logo：`public/logo.png`
+- 占位图地址集中在：`src/data/images.ts`（后续可替换）
+
+## 部署
+- 适配 GitHub Pages（`vite.config.ts` 已设置 `base: './'`）
