@@ -12,7 +12,7 @@ export const zh = {
     technology: '技术研发',
     ecosystem: '生态合作',
     team: '团队',
-    insights: '洞见',
+    insights: '动态',
     careers: '招聘',
     business: '商业模式',
     contact: '联系',
@@ -43,8 +43,8 @@ export const zh = {
       description: 'SaaS、数据交易、硬件销售与项目制解决方案。',
     },
     insights: {
-      title: '洞见 | Mass Computer System',
-      description: '行业洞察、白皮书与公司动态。',
+      title: '动态 | Mass Computer System',
+      description: '公司动态、白皮书与活动更新。',
     },
     careers: {
       title: '招聘 | Mass Computer System',
@@ -169,8 +169,8 @@ export const zh = {
       ],
     },
     insights: {
-      title: '最新洞见',
-      subtitle: '我们持续输出行业研究与技术成果，推动AI产业化进程。',
+      title: '最新动态',
+      subtitle: '关注公司最新项目、合作与技术成果进展。',
       items: [
         {
           title: '实时AI确权系统白皮书',
@@ -501,7 +501,7 @@ export const zh = {
   },
   insights: {
     hero: {
-      eyebrow: '洞见与动态',
+      eyebrow: '动态',
       title: '技术与产业的最新进展',
       subtitle: '聚焦实时AI、农业科技与数据资产化趋势。',
     },
@@ -544,7 +544,7 @@ export const zh = {
       ],
     },
     cta: {
-      title: '订阅实时AI洞见',
+      title: '订阅公司动态',
       subtitle: '获取最新项目与行业趋势。',
       primary: '订阅更新',
       secondary: '联系媒体',
@@ -630,7 +630,7 @@ export const zh = {
     },
     company: ['关于我们', '商业模式', '团队', '招聘'],
     solutionLinks: ['AI水产养殖', 'AI福利化养鸡', 'AI盐碱地海水稻', '数据资产化'],
-    resources: ['白皮书', '洞见', '新闻', '合作伙伴'],
+    resources: ['白皮书', '动态', '新闻', '合作伙伴'],
     contact: ['深圳 · 中国', 'contact@mcs.ai'],
     copyright: '© 2025 深圳麻省计算机系统有限公司。保留所有权利。',
   },
@@ -655,7 +655,7 @@ export const en = {
     technology: 'Technology',
     ecosystem: 'Ecosystem',
     team: 'Team',
-    insights: 'Insights',
+    insights: 'News',
     careers: 'Careers',
     business: 'Business',
     contact: 'Contact',
@@ -686,8 +686,8 @@ export const en = {
       description: 'AIaaS, data trading, hardware sales, and project-based delivery.',
     },
     insights: {
-      title: 'Insights | Mass Computer System',
-      description: 'Industry insights, whitepapers, and company updates.',
+      title: 'News | Mass Computer System',
+      description: 'Company updates, whitepapers, and events.',
     },
     careers: {
       title: 'Careers | Mass Computer System',
@@ -808,8 +808,8 @@ export const en = {
       ],
     },
     insights: {
-      title: 'Latest insights',
-      subtitle: 'Research, delivery metrics, and industry roadmaps.',
+      title: 'Latest news',
+      subtitle: 'Company updates, delivery metrics, and milestones.',
       items: [
         {
           title: 'Real-time AI Rights System Whitepaper',
@@ -1132,9 +1132,9 @@ export const en = {
   },
   insights: {
     hero: {
-      eyebrow: 'Insights',
-      title: 'Latest in real-time AI',
-      subtitle: 'Reports, news, and industry trends.',
+      eyebrow: 'News',
+      title: 'Company updates and releases',
+      subtitle: 'Projects, whitepapers, and ecosystem milestones.',
     },
     news: {
       title: 'Company news',
@@ -1176,7 +1176,7 @@ export const en = {
     },
     cta: {
       title: 'Subscribe for updates',
-      subtitle: 'Get the latest industry insights.',
+      subtitle: 'Get the latest company news.',
       primary: 'Subscribe',
       secondary: 'Media contact',
     },
@@ -1261,7 +1261,7 @@ export const en = {
     },
     company: ['About', 'Business', 'Team', 'Careers'],
     solutionLinks: ['AI Aquaculture', 'AI Poultry', 'Seawater Rice', 'Data Assetization'],
-    resources: ['Whitepaper', 'Insights', 'News', 'Partners'],
+    resources: ['Whitepaper', 'News', 'Updates', 'Partners'],
     contact: ['Shenzhen · China', 'contact@mcs.ai'],
     copyright: '© 2025 Mass Computer System. All rights reserved.',
   },
