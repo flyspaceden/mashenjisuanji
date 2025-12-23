@@ -477,6 +477,92 @@ export const zh = {
         },
       ],
     },
+    segments: {
+      title: '客户与场景分层',
+      subtitle: '面向农业生产、产业链龙头与金融机构的差异化交付。',
+      items: [
+        {
+          title: '农业生产端（养殖场/合作社/农场）',
+          description: '聚焦降本增效与稳定产量，交付实时监测与策略优化。',
+          points: ['AI监控与预警', '投喂/环境策略优化', '弱网边缘节点部署'],
+        },
+        {
+          title: '产业链与龙头企业',
+          description: '以平台化能力支持规模化管理与供应链协同。',
+          points: ['企业级平台与API', '跨基地统一调度', '合规追溯与供应链协同'],
+        },
+        {
+          title: '金融与保险机构',
+          description: '通过可信数据提升风控与定价能力。',
+          points: ['实时确权数据', '风控模型与信用画像', '交易与分润机制'],
+        },
+      ],
+    },
+    pricing: {
+      title: '订阅与计费',
+      subtitle: '从基础监控到企业级平台的分层方案。',
+      recommended: '推荐',
+      plans: [
+        {
+          title: 'Starter（免费）',
+          description: '试点启动',
+          features: ['基础监控看板', '设备接入', '周报'],
+        },
+        {
+          title: 'Pro（订阅）',
+          description: '规模化提升',
+          features: ['病害预警', '投喂优化', '产量预测', '模型升级', '告警SLA'],
+        },
+        {
+          title: 'Enterprise（定制）',
+          description: '大型客户与平台',
+          features: ['私有化部署', 'API计费', '数据治理合规', '专属算法交付'],
+        },
+      ],
+      metrics: ['设备/点位数', '基地面积/池塘数量', 'API调用量', '边缘节点数', 'SLA等级'],
+    },
+    dataLoop: {
+      title: '数据资产化闭环',
+      subtitle: '把生产数据变成金融可用资产。',
+      steps: ['采集', '确权', '训练', '分析', '交易/授信'],
+      benefits: [
+        '对农户：数据可变现，信用可量化',
+        '对金融：风控更精准，定价更合理',
+        '对平台：交易佣金 + 分润 + 数据服务费',
+      ],
+      note: '基于双重拍卖与博弈定价机制，保障激励相容与公平定价。',
+    },
+    delivery: {
+      title: '交付与运营模式',
+      subtitle: '从试点到规模复制的标准化路径。',
+      phases: [
+        {
+          title: '0→1 试点（4–8周）',
+          description: '设备接入、边缘部署、基线模型、对照指标。',
+        },
+        {
+          title: '1→10 扩面（2–4个月）',
+          description: '策略优化、流程标准化、运营工具链。',
+        },
+        {
+          title: '10→N 复制（持续）',
+          description: '多基地统一管理、数据资产化接入金融/保险。',
+        },
+      ],
+      capabilities: ['弱网云边协同', '现场运维与培训', '标准化SOP', '跨基地运营看板'],
+    },
+    flywheel: {
+      title: '增长飞轮',
+      subtitle: '以示范项目驱动长期增长。',
+      steps: [
+        '示范基地落地',
+        '数据沉淀与确权',
+        '风控/收益验证',
+        '金融/保险接入',
+        '更多客户与渠道',
+        '规模复制与收入增长',
+      ],
+    },
     revenue: {
       title: '客户价值路径',
       subtitle: '从生产到金融，形成产业全链路增值。',
@@ -487,10 +573,38 @@ export const zh = {
         '长期运营：平台、农户、金融机构三方共赢',
       ],
     },
+    credibility: {
+      title: '为何可信',
+      subtitle: '技术与产业的可验证成果。',
+      items: [
+        '图灵奖团队技术底座与国际学术影响力',
+        'CIDP平台服务100万+师生、近700家企业',
+        '智能ETC系统1亿+用户规模工程经验',
+        'Core Sets压缩90%+，误差控制在10%以内',
+        '高校/科研/龙头企业/保险生态合作网络',
+      ],
+    },
     financing: {
       title: '融资计划',
-      subtitle: '2025年11月天使轮，融资200万人民币。',
+      subtitle: '2025年11月天使轮。',
       items: ['核心技术迭代研发', '示范基地建设与验证', '市场拓展与团队扩充'],
+    },
+    milestones: {
+      title: '下一阶段里程碑',
+      subtitle: '围绕示范、平台与规模化交付推进。',
+      items: [
+        '完成1–2个标杆示范基地',
+        '上线确权闭环与交易试点',
+        '机器人/鸡舍/感知套件规模交付',
+        '拓展海外合作与区域示范',
+      ],
+    },
+    contactInfo: {
+      title: '商务联系',
+      items: [
+        { label: '邮箱', value: 'zengweifeng3@163.com' },
+        { label: '电话', value: '13923710623' },
+      ],
     },
     cta: {
       title: '与我们共建商业未来',
@@ -1108,6 +1222,97 @@ export const en = {
         },
       ],
     },
+    segments: {
+      title: 'Customer segments',
+      subtitle: 'Tailored delivery for producers, enterprises, and finance partners.',
+      items: [
+        {
+          title: 'Producers & farms',
+          description: 'Reduce cost and stabilize yield with real-time AI delivery.',
+          points: ['AI monitoring & alerts', 'Feeding/environment optimization', 'Edge deployment for weak networks'],
+        },
+        {
+          title: 'Enterprise & supply chain',
+          description: 'Platformized operations and data governance at scale.',
+          points: ['Enterprise platform & APIs', 'Multi-site orchestration', 'Compliance & traceability'],
+        },
+        {
+          title: 'Finance & insurance',
+          description: 'Trusted data to improve risk models and pricing.',
+          points: ['Real-time rights data', 'Risk scoring & credit profiling', 'Trading and revenue sharing'],
+        },
+      ],
+    },
+    pricing: {
+      title: 'Plans & pricing',
+      subtitle: 'From pilot monitoring to enterprise platforms.',
+      recommended: 'Recommended',
+      plans: [
+        {
+          title: 'Starter (Free)',
+          description: 'Pilot-ready',
+          features: ['Basic monitoring dashboard', 'Device onboarding', 'Weekly reports'],
+        },
+        {
+          title: 'Pro (Subscription)',
+          description: 'Scale-up operations',
+          features: ['Disease alerts', 'Feeding optimization', 'Yield prediction', 'Model upgrades', 'Alert SLA'],
+        },
+        {
+          title: 'Enterprise (Custom)',
+          description: 'Large-scale delivery',
+          features: ['Private deployment', 'API metering', 'Data governance & compliance', 'Dedicated algorithm delivery'],
+        },
+      ],
+      metrics: ['Devices/points', 'Site area or pond count', 'API calls', 'Edge nodes', 'SLA tier'],
+    },
+    dataLoop: {
+      title: 'Data assetization loop',
+      subtitle: 'Turn production data into finance-ready assets.',
+      steps: ['Collection', 'Confirmation', 'Training', 'Analysis', 'Trading/Credit'],
+      benefits: [
+        'Producers: monetize data and quantify credit',
+        'Finance: better risk control and pricing',
+        'Platform: transaction fees + revenue share + data services',
+      ],
+      note: 'Double-auction and game-theoretic pricing ensures incentive compatibility and fairness.',
+    },
+    delivery: {
+      title: 'Delivery & operations',
+      subtitle: 'A standardized path from pilot to scale.',
+      phases: [
+        {
+          title: '0-1 Pilot (4–8 weeks)',
+          description: 'Device onboarding, edge deployment, baseline models, benchmark metrics.',
+        },
+        {
+          title: '1-10 Expansion (2–4 months)',
+          description: 'Strategy tuning, standard workflows, operations toolchain.',
+        },
+        {
+          title: '10-N Replication (ongoing)',
+          description: 'Multi-site governance and finance/insurance integration.',
+        },
+      ],
+      capabilities: [
+        'Cloud-edge under weak networks',
+        'On-site ops and training',
+        'Standardized SOPs',
+        'Multi-site command dashboards',
+      ],
+    },
+    flywheel: {
+      title: 'Growth flywheel',
+      subtitle: 'Benchmark projects drive sustainable scale.',
+      steps: [
+        'Benchmark base delivery',
+        'Data accumulation & rights',
+        'ROI validation',
+        'Finance/insurance integration',
+        'Channel growth',
+        'Scaled replication',
+      ],
+    },
     revenue: {
       title: 'Customer value journey',
       subtitle: 'From production efficiency to finance value.',
@@ -1118,10 +1323,38 @@ export const en = {
         'Long-term platform revenue sharing',
       ],
     },
+    credibility: {
+      title: 'Why it is credible',
+      subtitle: 'Verified technical and industrial outcomes.',
+      items: [
+        'Turing-award lineage with global research impact',
+        'CIDP platform serving 1M+ students and ~700 enterprises',
+        'ETC system delivered to 100M+ users at scale',
+        'Core Sets: 90%+ data reduction with <10% error',
+        'Ecosystem partners across universities, enterprises, and insurance',
+      ],
+    },
     financing: {
       title: 'Financing plan',
-      subtitle: 'Angel round in Nov 2025: ¥2M.',
+      subtitle: 'Angel round in Nov 2025.',
       items: ['Core R&D iterations', 'Benchmark bases and validation', 'Market expansion and hiring'],
+    },
+    milestones: {
+      title: 'Next milestones',
+      subtitle: 'Benchmark delivery, platformization, and scale.',
+      items: [
+        'Deliver 1–2 benchmark bases',
+        'Launch rights & trading pilots',
+        'Scale robots, poultry houses, and sensing kits',
+        'Expand international partnerships',
+      ],
+    },
+    contactInfo: {
+      title: 'Business contact',
+      items: [
+        { label: 'Email', value: 'zengweifeng3@163.com' },
+        { label: 'Phone', value: '13923710623' },
+      ],
     },
     cta: {
       title: 'Let’s talk business',
