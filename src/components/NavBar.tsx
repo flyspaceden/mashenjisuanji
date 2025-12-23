@@ -6,6 +6,7 @@ import LanguageToggle from './LanguageToggle'
 import ButtonLink from './ButtonLink'
 import { navItems } from '../data/navigation'
 import { cn } from '../utils/cn'
+import logoUrl from '/logo.png'
 
 const NavBar = () => {
   const { t } = useTranslation()
@@ -20,7 +21,7 @@ const NavBar = () => {
     <header className="sticky top-0 z-40 border-b border-ink/10 bg-white/80 backdrop-blur-lg">
       <Container className="flex items-center justify-between py-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="MCS logo" className="h-10 w-10" />
+          <img src={logoUrl} alt="MCS logo" className="h-10 w-10" />
           <div className="leading-tight">
             <div className="text-sm font-semibold text-ink">{t('brand.name')}</div>
             <div className="text-xs text-ink/60">{t('brand.english')}</div>

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import Container from './Container'
+import logoUrl from '/logo.png'
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -13,7 +14,7 @@ const Footer = () => {
       <Container className="grid gap-10 py-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="MCS logo" className="h-10 w-10" />
+            <img src={logoUrl} alt="MCS logo" className="h-10 w-10" />
             <div>
               <div className="text-sm font-semibold text-ink">{t('brand.name')}</div>
               <div className="text-xs text-ink/60">{t('brand.english')}</div>
